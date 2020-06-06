@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #edddd4;
+	// background-image: linear-gradient(147deg, #ffe53b 0%, #ffa125 73%);
+}
+
+h1,
+p {
+	margin-block-end: 0;
+	margin-block-start: 0;
+}
+
+.navbar {
+	width: 100%;
+	background: #197278;
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+	// padding: 0 2rem;
+	h1 {
+		color: #283d3b;
+		font-size: 2.3rem;
+		padding: 1rem;
+	}
+	form {
+		margin: auto;
+	}
+}
+
+.container {
+	padding: 2rem 3rem;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.search-form {
+	input,
+	button {
+		padding: 0.5rem;
+		font-size: 1.5rem;
+		margin: auto;
+		color: #fff;
+		border: none;
+	}
+	// search magnifying glass
+	button {
+		background: none;
+		cursor: pointer;
+		transition: transform 0.3s ease, top 0.3s ease;
+		position: relative;
+		top: 0.15rem;
+		&:hover {
+			transform: rotate(45deg);
+			top: 0.1rem;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			color: #ddd;
+		}
+	}
+	input {
+		background: #283d3b;
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.651);
+		}
+	}
+	margin: auto;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.recipe-list {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 2rem;
+	// margin-top: 5rem;
+}
+
+.recipe {
+	background: #fff;
+	border-radius: 20px;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	// text
+	.text {
+		margin: 2rem 0;
+		h1 {
+			display: inline;
+			padding: 0.2rem 0;
+			// border-bottom: rgba($color: #c44536, $alpha: 1) 3px solid;
+		}
+		p {
+			font-style: italic;
+			padding: 0.5rem 0 0.7rem 0;
+			// margin: 0 2rem;
+			// border-bottom: 4px #c44536 solid;
+		}
+		li {
+			text-align: left;
+			list-style: none;
+			border-bottom: 2px rgba(100, 100, 100, 0.2) dotted;
+			padding: 0.5rem 0;
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+	//food image
+	img {
+		width: 300px;
+		height: 300px;
+		border-radius: 20px;
+		margin-bottom: 1.5rem;
+		border: 5px #c44536 solid;
+	}
+}
+
+.right-sect {
+	margin: 2rem;
+}
+
+.btn-dark {
+	background: #c44536;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: 0.1s all ease;
+	&:hover {
+		background: #772e25;
+	}
+}
+
+.intro {
+	text-align: center;
+	padding: 1.5rem 0 0 0;
+}
+
+.btn-none {
+	text-decoration: none;
+	color: #772e25;
+	border: none;
+}
