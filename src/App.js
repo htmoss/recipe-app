@@ -55,7 +55,6 @@ const App = () => {
 			</div>
 			<div className='intro'>
 				<h1>Welcome to FoodFinder!</h1>
-				{/* <p>Search for recipes in the box above</p> */}
 			</div>
 			<div className='container'>
 				<div className='recipe-list'>
