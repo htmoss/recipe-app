@@ -107,7 +107,7 @@ p {
 
 .recipe .recipe-info .text h1 {
   display: inline;
-  padding: 0.2rem 0;
+  padding: 0.2rem 0.8rem;
 }
 
 .recipe .recipe-info .text p {
